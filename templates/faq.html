@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Airspace | Creative Agency Bootstrap Template</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Creative Agency Bootstrap Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Airspace Template v1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="../static/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href="../static/plugins/Ionicons/css/ionicons.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="../static/plugins/animate-css/animate.css">
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href="../static/plugins/magnific-popup/magnific-popup.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="../static/plugins/slick/slick.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../static/css/style.css">
+
+  <style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f4;
+	}
+	
+	.chart-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #ffffff;
+	}
+	.navbar-brand {
+        display: block;
+        margin: auto;
+        color: #f04ada;
+        font-weight: bold;
+        font-family: "Helvetica";
+    }
+	
+	.containers {
+		max-width: 700px;
+		width: 100%;
+		padding: 20px;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		border-radius: 10px;
+		text-align: center;
+		
+	}
+	
+	.chart-title {
+		font-size: 24px;
+		margin-bottom: 20px;
+		color: #333;
+		font-weight: 700;
+	}
+	
+	canvas {
+		width: 100% !important;
+		height: auto !important;
+	}
+	
+	@media (max-width: 768px) {
+		.chart-title {
+			font-size: 20px;
+		}
+		.container {
+			padding: 15px;
+		}
+	}
+	
+	@media (max-width: 480px) {
+		.chart-title {
+			font-size: 18px;
+		}
+		.container {
+			padding: 10px;
+		}
+	}
+	
+  </style>
+
+</head>
+
+
+<body id="body">
+
+<!-- Header Start -->
+<header class="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg p-0">
+					<a class="navbar-brand" href="/">
+						<img src="../static/images/logo.png" alt="Logo">
+					</a>
+
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="ion-android-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item @@home">
+								<a class="nav-link" href="/">Home</a>
+							</li>
+							
+							<li class="nav-item @@service"><a class="nav-link" href="/login">Login</a></li>
+							<!--<li class="nav-item dropdown @@blog">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">Blog <span class="ion-ios-arrow-down"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown05">
+									<li><a class="dropdown-item @@blogGrid" href="blog-grid.html">Blog Grid</a></li>
+									<li><a class="dropdown-item @@blogSingle" href="blog-single.html">Blog Single</a></li>
+									<li><a class="dropdown-item @@blogRS" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+									<li><a class="dropdown-item @@blogLS" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+									<li><a class="dropdown-item @@blogFW" href="blog-full-width.html">Blog Full Width</a></li>
+
+									<li class="dropdown dropdown-submenu dropleft">
+										<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+
+										<ul class="dropdown-menu" aria-labelledby="dropdown0501">
+											<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+											<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>-->
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown05">
+									<li><a class="dropdown-item @@about" href="/about">About Us</a></li>
+									
+									<li><a class="dropdown-item active" href="/faq">Chart</a></li>
+									<li><a class="dropdown-item @@pricing" href="/pricing">Performance</a></li>
+								</ul>
+							</li>
+							<li class="nav-item @@contact"><a class="nav-link" href="/contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header><!-- header close -->
+
+
+    <section class="chart-section">
+        <div class="containers">
+            <h1 class="chart-title">Medical Features Breakdown</h1>
+            <canvas id="myPieChart"></canvas>
+        </div>
+    </section>
+
+    <script>
+        const ctx = document.getElementById('myPieChart').getContext('2d');
+        const myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: [
+                    'Drug', 'Age', 'Sex', 'Ascites', 'Hepatomegaly',
+                    'Spider', 'Edema', 'Bilirubin', 'Cholesterol',
+                    'Albumin', 'Copper', 'Alk Phos', 'SGOT',
+                    'Triglycerides', 'Platelets', 'Prothrombin'
+                ],
+                datasets: [{
+                    data: [12, 19, 3, 5, 2, 3, 7, 8, 6, 4, 5, 9, 11, 10, 12, 15],
+                    backgroundColor: [
+                        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF',
+                        '#FF9F40', '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0',
+                        '#9966FF', '#FF9F40', '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'
+                    ],
+                    hoverBackgroundColor: [
+                        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF',
+                        '#FF9F40', '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0',
+                        '#9966FF', '#FF9F40', '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                    },
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!-- footer Start -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+						<li><a href="/about">About Us</a></li>
+						<li><a href="/contact">Contact us</a></li>
+						<li><a href="/faq">Chart</a></li>
+						<li><a href="/pricing">Performance</a></li>
+					</ul>
+				</div>
+				<p class="copyright mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by Python Team 2024<a
+						href="http://www.themefisher.com">Theme</a>. All rights reserved.
+					<br> Get More <a href="https://themefisher.com/free-bootstrap-templates/">
+						Info</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--Scroll to top-->
+<div id="scroll-to-top" class="scroll-to-top">
+	<span class="icon ion-ios-arrow-up"></span>
+</div>
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+    <!-- Main jQuery -->
+    <script src="../static/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="../static/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick Carousel -->
+    <script src="../static/plugins/slick/slick.min.js"></script>
+    <script src="../static/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- filter -->
+    <script src="../static/plugins/shuffle/shuffle.min.js"></script>
+    <script src="../static/plugins/SyoTimer/jquery.syotimer.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="../static/plugins/google-map/map.js"></script>
+
+    <script src="../static/js/script.js"></script>
+
+    </body>
+
+    </html>
