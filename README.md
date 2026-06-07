@@ -44,6 +44,13 @@ No imaging. No expensive equipment. Just blood biomarkers.
 
 ## 📸 Application Screenshots
 
+| Home Page | Login Page |
+|-----------|------------|
+| ![Home](screenshots/homepage.png) | ![Login](screenshots/login%20page.png) |
+
+| Prediction Page | Performance Page |
+|-----------------|-----------------|
+| ![Prediction](screenshots/prediction.png) | ![Performance](screenshots/performance.png) |
 
 | About Page | Contact Page |
 |------------|--------------|
@@ -91,23 +98,63 @@ Patient Blood Test → Data Preprocessing → Feature Engineering → ML Model �
 pip install -r requirements.txt
 ```
 
-### Run the Web App
+---
+
+### ▶️ Option 1 — Run Using `app.py`
+
+> Main web application with prediction interface
 
 ```bash
-# Step 1 — Activate conda environment
+# Step 1 — Navigate to project folder
+cd OneDrive\Desktop\MAJOR\CODE\Liver-Cirrhosis-Stage-Prediction-main2\Liver-Cirrhosis-Stage-Prediction-main
+
+# Step 2 — Activate conda environment
+conda activate MAJOR
+
+# Step 3 — Run the app
+python app.py run server
+```
+
+🌐 Open browser at:
+```
+http://127.0.0.1:8080
+```
+
+| Detail | Value |
+|--------|-------|
+| File | `app.py` |
+| Environment | `MAJOR` |
+| Port | `8080` |
+| Debug Mode | Off |
+
+---
+
+### ▶️ Option 2 — Run Using `application.py`
+
+> Alternative deployment version of the app
+
+```bash
+# Step 1 — Navigate to project folder
+cd Downloads\MAJOR\MAJOR\CODE\Liver-Cirrhosis-Stage-Prediction-main\FCODE\LIVER\Liver-Cirrhosis-Stage-Prediction-main
+
+# Step 2 — Activate conda environment
 conda activate major
 
-# Step 2 — Navigate to project folder
-cd FCODE/LIVER/Liver-Cirrhosis-Stage-Prediction-main
-
-# Step 3 — Run the Flask app
+# Step 3 — Run the app
 python application.py run server
 ```
 
-Then open your browser at:
+🌐 Open browser at:
 ```
 http://127.0.0.1:5000
 ```
+
+| Detail | Value |
+|--------|-------|
+| File | `application.py` |
+| Environment | `major` |
+| Port | `5000` |
+| Debug Mode | On |
 
 ---
 
@@ -115,7 +162,8 @@ http://127.0.0.1:5000
 
 ```
 LivMarX/
-├── application.py              # Main Flask application
+├── app.py                      # Main Flask application (port 8080)
+├── application.py              # Alternative Flask entry point (port 5000)
 ├── Model Deployment.ipynb      # ML model training & evaluation
 ├── LivMarX_Training.ipynb      # Model training notebook
 ├── cirrhosis.csv               # Dataset (424 patients)
@@ -146,7 +194,7 @@ LivMarX/
 - ✅ **Cost-effective** — Reduces diagnostic cost significantly
 - ✅ **High accuracy** — 87% accuracy with 0.95 AUC
 - ✅ **Full Stack** — End-to-end Flask web application
-- ✅ **Accessible** — Designed for resource-limited healthcare settings
+- ✅ **Two run options** — `app.py` and `application.py` both supported
 - ✅ **Clinically relevant** — Based on real Mayo Clinic trial data
 
 ---
@@ -170,7 +218,6 @@ LivMarX/
 - Expansion to broader, more diverse patient populations
 - Hybrid ML + statistical modeling approaches
 
-
 ---
 
 ## 📚 References
@@ -185,7 +232,7 @@ This project is backed by 16 peer-reviewed research papers from journals includi
 
 ## 📜 License
 
-This project was developed as a Final Year B.Tech project at GNITC, Hyderabad under JNTU.
+This project was developed as a Final Year B.Tech project at GNITC, Hyderabad under JNTU, 2025–2026.
 
 ---
 
