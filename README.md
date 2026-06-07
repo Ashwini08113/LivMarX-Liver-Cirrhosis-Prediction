@@ -1,13 +1,13 @@
-# LivMarX-Liver-Cirrhosis-Prediction
 # 🫀 LivMarX — Liver Cirrhosis Stage Classification Using Machine Learning
 
 > **Predicting liver cirrhosis severity from routine blood tests — no CT scan or MRI needed.**
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web%20App-black?style=flat&logo=flask)
 ![ML](https://img.shields.io/badge/Machine%20Learning-XGBoost%20%7C%20Neural%20Networks-orange?style=flat)
 ![Accuracy](https://img.shields.io/badge/Accuracy-87%25-brightgreen?style=flat)
-![AUC](https://img.shields.io/badge/AUC-0.95-success?style=flat)
-
+![AUC](https://img.shields.io/badge/AUC--ROC-0.95-success?style=flat)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
 
 ---
 
@@ -42,12 +42,32 @@ No imaging. No expensive equipment. Just blood biomarkers.
 
 ---
 
+## 📸 Application Screenshots
+
+| Home Page | Login Page |
+|-----------|------------|
+| ![Home](<img width="915" height="646" alt="homepage" src="https://github.com/user-attachments/assets/ac0cc3ea-c2dc-48e8-acca-3a1ecb444050" />
+) | ![Login](<img width="1148" height="792" alt="login page" src="https://github.com/user-attachments/assets/50086247-406c-43f4-9127-eabd8045afab" />
+) |
+
+| Prediction Page | Performance Page |
+|-----------------|-----------------|
+| ![Prediction](<img width="1242" height="1764" alt="prediction" src="https://github.com/user-attachments/assets/14f488f7-ab2f-4b46-a01a-cfd59debb9c4" />
+) | ![Performance](<img width="1166" height="739" alt="performance" src="https://github.com/user-attachments/assets/64ffdda5-7bef-49a0-963a-1138f987ead0" />
+) |
+
+| About Page | Contact Page |
+|------------|--------------|
+| ![About](screenshots/about.png) | ![Contact](screenshots/contact.png) |
+
+---
+
 ## 🧠 How It Works
 
 ```
 Patient Blood Test → Data Preprocessing → Feature Engineering → ML Model → Stage Prediction
-                                                                    ↓
-                                              Mild | Moderate | Severe
+                                                                     ↓
+                                               Mild | Moderate | Severe
 ```
 
 ### Pipeline:
@@ -65,12 +85,13 @@ Patient Blood Test → Data Preprocessing → Feature Engineering → ML Model �
 | Category | Tools |
 |----------|-------|
 | Language | Python 3.8+ |
+| Web Framework | Flask |
 | ML Libraries | Scikit-learn, XGBoost, LightGBM, CatBoost |
 | Deep Learning | Neural Networks (Fully Connected) |
 | Data Processing | Pandas, NumPy, SMOTE (imbalanced-learn) |
 | Visualization | Matplotlib, Seaborn |
-| Web Framework | Flask |
-| Development | Jupyter Notebook, Spyder |
+| Frontend | HTML, CSS, JavaScript |
+| Development | Jupyter Notebook, Anaconda |
 
 ---
 
@@ -82,14 +103,21 @@ pip install -r requirements.txt
 ```
 
 ### Run the Web App
-```bash
-python app.py
-```
-Then open your browser at `http://localhost:5000`
 
-### Run the Notebook
 ```bash
-jupyter notebook "Model Deployment.ipynb"
+# Step 1 — Activate conda environment
+conda activate major
+
+# Step 2 — Navigate to project folder
+cd FCODE/LIVER/Liver-Cirrhosis-Stage-Prediction-main
+
+# Step 3 — Run the Flask app
+python application.py run server
+```
+
+Then open your browser at:
+```
+http://127.0.0.1:5000
 ```
 
 ---
@@ -98,15 +126,26 @@ jupyter notebook "Model Deployment.ipynb"
 
 ```
 LivMarX/
-├── Model Deployment.ipynb    # Main ML model training & evaluation
-├── cirrhosis.xls             # Dataset (424 patients)
-├── model.pkl                 # Trained ML model
-├── scaler.bin                # Data scaler for preprocessing
-├── requirements.txt          # Python dependencies
-├── Procfile                  # Deployment configuration
-├── templates/                # HTML frontend pages
-├── static/                   # CSS, JS, images
-├── screenshots/              # App screenshots
+├── application.py              # Main Flask application
+├── Model Deployment.ipynb      # ML model training & evaluation
+├── LivMarX_Training.ipynb      # Model training notebook
+├── cirrhosis.csv               # Dataset (424 patients)
+├── model.pkl                   # Trained ML model
+├── scaler.bin                  # Data scaler for preprocessing
+├── requirements.txt            # Python dependencies
+├── Procfile                    # Deployment configuration
+├── templates/                  # HTML frontend pages
+├── static/                     # CSS, JS, images
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── screenshots/                # App screenshots
+│   ├── homepage.png
+│   ├── login page.png
+│   ├── prediction.png
+│   ├── performance.png
+│   ├── about.png
+│   └── contact.png
 └── README.md
 ```
 
@@ -117,8 +156,8 @@ LivMarX/
 - ✅ **Non-invasive** — Uses only blood biomarkers, no imaging required
 - ✅ **Cost-effective** — Reduces diagnostic cost significantly
 - ✅ **High accuracy** — 87% accuracy with 0.95 AUC
+- ✅ **Full Stack** — End-to-end Flask web application
 - ✅ **Accessible** — Designed for resource-limited healthcare settings
-- ✅ **End-to-end** — From raw data to deployed web application
 - ✅ **Clinically relevant** — Based on real Mayo Clinic trial data
 
 ---
@@ -142,21 +181,6 @@ LivMarX/
 - Expansion to broader, more diverse patient populations
 - Hybrid ML + statistical modeling approaches
 
----
-
-## 👥 Team
-
-| Name | Roll No |
-|------|---------|
-| Pothanaboina Ashwini | 22WJ1A6799 |
-| Mamidi Harini | 22WJ1A6775 |
-| Pamba Manasa | 22WJ1A6793 |
-| T. Vimika | 22WJ1A67B9 |
-| Ummadi Vaishnavi | 23WJ5A6712 |
-
-**Guide:** Mr. Muzamil Amin, Assistant Professor, CSE-Data Science  
-**Institution:** Guru Nanak Institutions Technical Campus (GNITC), Hyderabad  
-**Year:** 2025–2026
 
 ---
 
