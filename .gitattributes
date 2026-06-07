@@ -1,5 +1,4 @@
 *.html linguist-detectable=false
 *.css linguist-detectable=false
 *.js linguist-detectable=false
-*.jupyter notebook linguist-detectable=false
-*.procfile linguist-detectable=false
+*.ipynb linguist-detectable=false
