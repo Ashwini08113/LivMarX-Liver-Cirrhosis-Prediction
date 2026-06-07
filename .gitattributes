@@ -2,3 +2,6 @@
 *.css linguist-detectable=false
 *.js linguist-detectable=false
 *.ipynb linguist-detectable=false
+Procfile linguist-detectable=false
+*.bin linguist-detectable=false
+*.pkl linguist-detectable=false
