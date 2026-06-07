@@ -44,17 +44,6 @@ No imaging. No expensive equipment. Just blood biomarkers.
 
 ## 📸 Application Screenshots
 
-| Home Page | Login Page |
-|-----------|------------|
-| ![Home](<img width="915" height="646" alt="homepage" src="https://github.com/user-attachments/assets/ac0cc3ea-c2dc-48e8-acca-3a1ecb444050" />
-) | ![Login](<img width="1148" height="792" alt="login page" src="https://github.com/user-attachments/assets/50086247-406c-43f4-9127-eabd8045afab" />
-) |
-
-| Prediction Page | Performance Page |
-|-----------------|-----------------|
-| ![Prediction](<img width="1242" height="1764" alt="prediction" src="https://github.com/user-attachments/assets/14f488f7-ab2f-4b46-a01a-cfd59debb9c4" />
-) | ![Performance](<img width="1166" height="739" alt="performance" src="https://github.com/user-attachments/assets/64ffdda5-7bef-49a0-963a-1138f987ead0" />
-) |
 
 | About Page | Contact Page |
 |------------|--------------|
